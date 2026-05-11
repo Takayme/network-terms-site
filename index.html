@@ -3,131 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Термины специалиста компьютерных сетей и комплексов</title>
+  <title>IT Термины и сленг</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f4f6f9;
-      color: #222;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+      color: white;
+      min-height: 100vh;
     }
 
     header {
-      background: #1f3c88;
-      color: white;
-      padding: 30px;
       text-align: center;
+      padding: 50px 20px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     header h1 {
-      margin: 0;
-      font-size: 32px;
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #60a5fa;
+      text-shadow: 0 0 15px rgba(96,165,250,0.7);
     }
 
     header p {
-      margin-top: 10px;
       font-size: 18px;
+      color: #cbd5e1;
     }
 
     main {
-      max-width: 1200px;
-      margin: 30px auto;
-      padding: 20px;
+      max-width: 1400px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    .terms {
+    .section-title {
+      font-size: 32px;
+      margin: 50px 0 25px;
+      color: #38bdf8;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 20px;
     }
 
     .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
       transition: 0.3s;
+      cursor: pointer;
+      min-height: 140px;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 0 20px rgba(56,189,248,0.5);
     }
 
     .card h2 {
-      margin-top: 0;
-      color: #1f3c88;
-      font-size: 20px;
+      color: #7dd3fc;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .tooltip {
+      opacity: 0;
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      background: rgba(15,23,42,0.95);
+      border: 1px solid #38bdf8;
+      border-radius: 10px;
+      padding: 12px;
+      color: white;
+      font-size: 14px;
+      transition: 0.3s;
+      transform: translateY(10px);
+    }
+
+    .card:hover .tooltip {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      background: #1f3c88;
-      color: white;
+      padding: 30px;
       margin-top: 40px;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>40 терминов по специальности</h1>
-  <p>Специалист компьютерных сетей и комплексов</p>
+  <h1>IT Термины и Компьютерный Сленг</h1>
+  <p>Учебный проект по специальности «Специалист компьютерных сетей и комплексов»</p>
 </header>
 
 <main>
-  <section class="terms">
 
-    <div class="card"><h2>1. IP-адрес</h2><p>Уникальный адрес устройства в сети.</p></div>
-    <div class="card"><h2>2. DNS</h2><p>Система преобразования доменных имён в IP-адреса.</p></div>
-    <div class="card"><h2>3. Сервер</h2><p>Компьютер, предоставляющий ресурсы другим устройствам.</p></div>
-    <div class="card"><h2>4. Клиент</h2><p>Устройство или программа, использующая ресурсы сервера.</p></div>
-    <div class="card"><h2>5. Маршрутизатор</h2><p>Устройство для передачи данных между сетями.</p></div>
-    <div class="card"><h2>6. Коммутатор</h2><p>Устройство для соединения компьютеров внутри сети.</p></div>
-    <div class="card"><h2>7. Локальная сеть (LAN)</h2><p>Сеть внутри одного здания или организации.</p></div>
-    <div class="card"><h2>8. Глобальная сеть (WAN)</h2><p>Сеть, объединяющая устройства на больших расстояниях.</p></div>
-    <div class="card"><h2>9. Протокол</h2><p>Набор правил передачи данных.</p></div>
-    <div class="card"><h2>10. TCP/IP</h2><p>Основной набор сетевых протоколов интернета.</p></div>
+  <h2 class="section-title">40 IT-Терминов</h2>
 
-    <div class="card"><h2>11. HTTP</h2><p>Протокол передачи веб-страниц.</p></div>
-    <div class="card"><h2>12. HTTPS</h2><p>Защищённая версия протокола HTTP.</p></div>
-    <div class="card"><h2>13. FTP</h2><p>Протокол передачи файлов.</p></div>
-    <div class="card"><h2>14. VPN</h2><p>Технология защищённого соединения через интернет.</p></div>
-    <div class="card"><h2>15. Firewall</h2><p>Средство защиты сети от угроз.</p></div>
-    <div class="card"><h2>16. MAC-адрес</h2><p>Физический адрес сетевого устройства.</p></div>
-    <div class="card"><h2>17. Wi‑Fi</h2><p>Беспроводная технология передачи данных.</p></div>
-    <div class="card"><h2>18. Кабель витая пара</h2><p>Основной сетевой кабель Ethernet.</p></div>
-    <div class="card"><h2>19. Ethernet</h2><p>Технология проводных локальных сетей.</p></div>
-    <div class="card"><h2>20. Шлюз</h2><p>Устройство для соединения разных сетей.</p></div>
+  <div class="grid">
 
-    <div class="card"><h2>21. DHCP</h2><p>Протокол автоматической выдачи IP-адресов.</p></div>
-    <div class="card"><h2>22. Ping</h2><p>Команда проверки связи между устройствами.</p></div>
-    <div class="card"><h2>23. Хост</h2><p>Любое устройство, подключённое к сети.</p></div>
-    <div class="card"><h2>24. Домен</h2><p>Уникальное имя сайта или сети.</p></div>
-    <div class="card"><h2>25. Облачные технологии</h2><p>Хранение и обработка данных через интернет.</p></div>
-    <div class="card"><h2>26. Виртуализация</h2><p>Создание виртуальных машин и систем.</p></div>
-    <div class="card"><h2>27. Linux</h2><p>Популярная серверная операционная система.</p></div>
-    <div class="card"><h2>28. Windows Server</h2><p>Серверная операционная система Microsoft.</p></div>
-    <div class="card"><h2>29. База данных</h2><p>Организованное хранилище информации.</p></div>
-    <div class="card"><h2>30. SQL</h2><p>Язык управления базами данных.</p></div>
+    <div class="card"><h2>IP-адрес</h2><div class="tooltip">Уникальный адрес устройства в компьютерной сети.</div></div>
+    <div class="card"><h2>DNS</h2><div class="tooltip">Система преобразования доменных имён в IP-адреса.</div></div>
+    <div class="card"><h2>Сервер</h2><div class="tooltip">Компьютер, который предоставляет данные и ресурсы другим устройствам.</div></div>
+    <div class="card"><h2>Клиент</h2><div class="tooltip">Устройство или программа, использующая ресурсы сервера.</div></div>
+    <div class="card"><h2>Маршрутизатор</h2><div class="tooltip">Устройство для передачи данных между сетями.</div></div>
+    <div class="card"><h2>Коммутатор</h2><div class="tooltip">Устройство для соединения устройств внутри локальной сети.</div></div>
+    <div class="card"><h2>LAN</h2><div class="tooltip">Локальная сеть внутри помещения или здания.</div></div>
+    <div class="card"><h2>WAN</h2><div class="tooltip">Глобальная сеть на больших расстояниях.</div></div>
+    <div class="card"><h2>Протокол</h2><div class="tooltip">Набор правил передачи данных.</div></div>
+    <div class="card"><h2>TCP/IP</h2><div class="tooltip">Основной набор сетевых интернет-протоколов.</div></div>
 
-    <div class="card"><h2>31. Резервное копирование</h2><p>Создание копий данных для восстановления.</p></div>
-    <div class="card"><h2>32. Антивирус</h2><p>Программа для защиты от вредоносного ПО.</p></div>
-    <div class="card"><h2>33. Кибербезопасность</h2><p>Защита систем и сетей от атак.</p></div>
-    <div class="card"><h2>34. Трафик</h2><p>Объём передаваемых данных в сети.</p></div>
-    <div class="card"><h2>35. Сетевой адаптер</h2><p>Устройство подключения компьютера к сети.</p></div>
-    <div class="card"><h2>36. Топология сети</h2><p>Схема расположения сетевых устройств.</p></div>
-    <div class="card"><h2>37. Proxy-сервер</h2><p>Промежуточный сервер между клиентом и интернетом.</p></div>
-    <div class="card"><h2>38. Дата-центр</h2><p>Помещение для размещения серверов.</p></div>
-    <div class="card"><h2>39. Сетевой пакет</h2><p>Часть данных, передаваемая по сети.</p></div>
-    <div class="card"><h2>40. Администрирование</h2><p>Настройка и поддержка компьютерных сетей.</p></div>
+    <div class="card"><h2>HTTP</h2><div class="tooltip">Протокол передачи веб-страниц.</div></div>
+    <div class="card"><h2>HTTPS</h2><div class="tooltip">Защищённая версия HTTP.</div></div>
+    <div class="card"><h2>FTP</h2><div class="tooltip">Протокол передачи файлов.</div></div>
+    <div class="card"><h2>VPN</h2><div class="tooltip">Защищённое подключение через интернет.</div></div>
+    <div class="card"><h2>Firewall</h2><div class="tooltip">Система защиты сети от угроз.</div></div>
+    <div class="card"><h2>MAC-адрес</h2><div class="tooltip">Физический адрес сетевого устройства.</div></div>
+    <div class="card"><h2>Wi‑Fi</h2><div class="tooltip">Беспроводная технология передачи данных.</div></div>
+    <div class="card"><h2>Ethernet</h2><div class="tooltip">Технология проводных локальных сетей.</div></div>
+    <div class="card"><h2>DHCP</h2><div class="tooltip">Протокол автоматической выдачи IP-адресов.</div></div>
+    <div class="card"><h2>Ping</h2><div class="tooltip">Команда проверки соединения между устройствами.</div></div>
 
-  </section>
+    <div class="card"><h2>Хост</h2><div class="tooltip">Любое устройство, подключённое к сети.</div></div>
+    <div class="card"><h2>Домен</h2><div class="tooltip">Уникальное имя сайта.</div></div>
+    <div class="card"><h2>Linux</h2><div class="tooltip">Популярная серверная операционная система.</div></div>
+    <div class="card"><h2>SQL</h2><div class="tooltip">Язык управления базами данных.</div></div>
+    <div class="card"><h2>Трафик</h2><div class="tooltip">Объём данных, проходящих через сеть.</div></div>
+    <div class="card"><h2>Антивирус</h2><div class="tooltip">Программа для защиты от вирусов.</div></div>
+    <div class="card"><h2>Кибербезопасность</h2><div class="tooltip">Защита сетей и систем от атак.</div></div>
+    <div class="card"><h2>Proxy</h2><div class="tooltip">Промежуточный сервер между пользователем и интернетом.</div></div>
+    <div class="card"><h2>Дата-центр</h2><div class="tooltip">Помещение с большим количеством серверов.</div></div>
+    <div class="card"><h2>Топология</h2><div class="tooltip">Схема расположения устройств в сети.</div></div>
+
+    <div class="card"><h2>Виртуализация</h2><div class="tooltip">Создание виртуальных систем и машин.</div></div>
+    <div class="card"><h2>Облачные технологии</h2><div class="tooltip">Хранение данных через интернет.</div></div>
+    <div class="card"><h2>База данных</h2><div class="tooltip">Организованное хранилище информации.</div></div>
+    <div class="card"><h2>Сетевой пакет</h2><div class="tooltip">Единица передачи данных по сети.</div></div>
+    <div class="card"><h2>Администрирование</h2><div class="tooltip">Настройка и поддержка сетей.</div></div>
+    <div class="card"><h2>Шлюз</h2><div class="tooltip">Устройство соединения разных сетей.</div></div>
+    <div class="card"><h2>Сетевой адаптер</h2><div class="tooltip">Устройство подключения компьютера к сети.</div></div>
+    <div class="card"><h2>Windows Server</h2><div class="tooltip">Серверная ОС от Microsoft.</div></div>
+    <div class="card"><h2>Резервное копирование</h2><div class="tooltip">Создание копий данных для восстановления.</div></div>
+    <div class="card"><h2>Витая пара</h2><div class="tooltip">Тип сетевого кабеля Ethernet.</div></div>
+
+  </div>
+
+  <h2 class="section-title">40 Сленговых IT-Слов</h2>
+
+  <div class="grid">
+
+    <div class="card"><h2>Баг</h2><div class="tooltip">Ошибка в программе или системе.</div></div>
+    <div class="card"><h2>Фикс</h2><div class="tooltip">Исправление ошибки.</div></div>
+    <div class="card"><h2>Лаг</h2><div class="tooltip">Задержка или торможение системы.</div></div>
+    <div class="card"><h2>Юзер</h2><div class="tooltip">Пользователь компьютера или программы.</div></div>
+    <div class="card"><h2>Железо</h2><div class="tooltip">Компьютерные комплектующие.</div></div>
+    <div class="card"><h2>Софт</h2><div class="tooltip">Программное обеспечение.</div></div>
+    <div class="card"><h2>Винда</h2><div class="tooltip">Операционная система Windows.</div></div>
+    <div class="card"><h2>Линукс</h2><div class="tooltip">Операционная система Linux.</div></div>
+    <div class="card"><h2>Хакнуть</h2><div class="tooltip">Получить несанкционированный доступ.</div></div>
+    <div class="card"><h2>Краш</h2><div class="tooltip">Аварийное завершение программы.</div></div>
+
+    <div class="card"><h2>Рофл</h2><div class="tooltip">Шутка или смешная ситуация.</div></div>
+    <div class="card"><h2>Читер</h2><div class="tooltip">Человек, использующий запрещённые преимущества.</div></div>
+    <div class="card"><h2>Апгрейд</h2><div class="tooltip">Улучшение оборудования или ПО.</div></div>
+    <div class="card"><h2>Дебаг</h2><div class="tooltip">Поиск и устранение ошибок.</div></div>
+    <div class="card"><h2>Кодить</h2><div class="tooltip">Писать программный код.</div></div>
+    <div class="card"><h2>Админ</h2><div class="tooltip">Системный администратор.</div></div>
+    <div class="card"><h2>Сервак</h2><div class="tooltip">Разговорное название сервера.</div></div>
+    <div class="card"><h2>Материнка</h2><div class="tooltip">Материнская плата компьютера.</div></div>
+    <div class="card"><h2>Проц</h2><div class="tooltip">Процессор компьютера.</div></div>
+    <div class="card"><h2>Видюха</h2><div class="tooltip">Видеокарта компьютера.</div></div>
+
+    <div class="card"><h2>Оператива</h2><div class="tooltip">Оперативная память.</div></div>
+    <div class="card"><h2>Пинг</h2><div class="tooltip">Задержка соединения в сети.</div></div>
+    <div class="card"><h2>Флуд</h2><div class="tooltip">Большое количество сообщений.</div></div>
+    <div class="card"><h2>Тролль</h2><div class="tooltip">Человек, провоцирующий других в интернете.</div></div>
+    <div class="card"><h2>Фриз</h2><div class="tooltip">Зависание программы или игры.</div></div>
+    <div class="card"><h2>Бутлуп</h2><div class="tooltip">Бесконечная перезагрузка устройства.</div></div>
+    <div class="card"><h2>Рут</h2><div class="tooltip">Полный доступ к системе.</div></div>
+    <div class="card"><h2>Дистрибутив</h2><div class="tooltip">Установочный пакет программы или ОС.</div></div>
+    <div class="card"><h2>Репозиторий</h2><div class="tooltip">Хранилище файлов и проектов.</div></div>
+    <div class="card"><h2>Коммит</h2><div class="tooltip">Сохранение изменений в Git.</div></div>
+
+    <div class="card"><h2>Патч</h2><div class="tooltip">Обновление программы.</div></div>
+    <div class="card"><h2>Гит</h2><div class="tooltip">Система контроля версий Git.</div></div>
+    <div class="card"><h2>Бэкап</h2><div class="tooltip">Резервная копия данных.</div></div>
+    <div class="card"><h2>Фаервол</h2><div class="tooltip">Система сетевой защиты.</div></div>
+    <div class="card"><h2>Ддос</h2><div class="tooltip">Атака перегрузкой сервера.</div></div>
+    <div class="card"><h2>Фишинг</h2><div class="tooltip">Кража данных через поддельные сайты.</div></div>
+    <div class="card"><h2>Спам</h2><div class="tooltip">Нежелательные сообщения.</div></div>
+    <div class="card"><h2>Мод</h2><div class="tooltip">Модификация программы или игры.</div></div>
+    <div class="card"><h2>Пруф</h2><div class="tooltip">Доказательство информации.</div></div>
+    <div class="card"><h2>АФК</h2><div class="tooltip">Пользователь временно отошёл от компьютера.</div></div>
+
+  </div>
+
 </main>
 
 <footer>
-  <p>Учебный проект по русскому языку</p>
+  <p>Сайт создан для учебного зачёта по русскому языку • 2026</p>
 </footer>
 
 </body>
